@@ -85,41 +85,29 @@
 
                       <div class="form-row p-2">
                         <div class="form-group col-md-12">
-                            <label class="title">Rut empresa</label>
-                            <input type="text" class="form-control" name="RutEmp">
+                            <label class="title">Nombre de constructora</label>
+                         <asp:DropDownList ID="DropDownConstructora" runat="server" class="form-select"></asp:DropDownList>
                         </div>
-                    </td>
-                       <td class="p-2" >
-                      <div class="form-group col-md-12">
-                              <label class="title" >Obra Contructora</label>
-                              <select class="form-select" id="specificSizeSelect">
-                                <option selected>...</option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="3">C</option>
-                                <option value="4">D</option>
-                              </select>
-                          </div>
-                        </td>
-                        <td class="p-2">
-                          <div class="form-group col-md-12">
-                              <label class="title" >Contacto</label>
-                              <select class="form-select" id="specificSizeSelect">
-                                <option selected>...</option>
-                                <option value="1">Edgar Leal</option>
-                                <option value="2">Franco Casanova</option>
-                                <option value="3">Kevin </option>
-                              </select>
-                          </div>
-                        </td>
-              
-                  <td class="p-2">
-                    <div class="form-group col-md-12">
-                        <label class="title" >Tipo de documento</label>
-                        <select class="form-select" id="specificSizeSelect">
-                          <option selected>...</option>
-                          <option value="1">Factura</option>
-                          <option value="2">Guia de despacho</option>
+             </td>
+                 <td class="p-2">
+                     <div class="form-group col-md-12">
+                         <label class="title">Obra Contructora</label>
+                         <asp:DropDownList ID="DropDownObra" runat="server" class="form-select"></asp:DropDownList>
+                     </div>
+                 </td>
+                 <td class="p-2">
+                     <div class="form-group col-md-12">
+                         <label class="title">Contacto</label>
+                         <asp:DropDownList ID="DropDownContacto" runat="server" class="form-select"></asp:DropDownList>
+                     </div>
+                 </td>
+
+                 <td class="p-2">
+                     <div class="form-group col-md-12">
+                         <label class="title">Tipo de documento</label>
+                         <select class="form-select" id="specificSizeSelect">
+                          <option selected></option>
+                          <option value="1">Guia de despacho</option>
                         </select>
                       </div>
                  </td>
@@ -133,20 +121,21 @@
               <div class="container p-5">
                   <div class="form-group col-md-12">
                       <label class="title" >Tipo de Herramientas</label>
-                      <select class="form-select" id="specificSizeSelect">
-                        <option selected>...</option>
-                        <option value="1">Cincelado</option>
-                        <option value="2">Demoledor</option>
-                      </select>
+                         <asp:DropDownList ID="DropDownCategoria" runat="server" class="form-select"></asp:DropDownList>
                   </div>
+                  <td>
+                  <div class="form-group col-md-12">
+                      <label class="title" >Herramientas</label>
+                         <asp:DropDownList ID="DropDownHerramienta" runat="server" class="form-select"></asp:DropDownList>
+                  </div>
+                      </td>
               </div>
             </td>
           </tr>
             </table>
             <div class="container p-5">
               <div class="d-grid gap-2 col-6 mx-auto">
-                  <button class="btn btn-secondary" type="button">Enviar</button>
-                  
+                  <asp:Button ID="crear" runat="server" Text="Crear" class="btn btn-secondary" OnClick="crear_Click" />
                 </div>
           </div> 
           </div>
