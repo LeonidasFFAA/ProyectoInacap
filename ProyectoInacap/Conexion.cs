@@ -10,7 +10,7 @@ namespace ProyectoInacap
     {
         public static MySqlConnection conexion()
         {
-            string servidor = "34.176.111.186";
+            var servidor = "34.176.111.186";
             string bd = "Avro";
             string usuario = "root";
             string password = "Inacap.2022";

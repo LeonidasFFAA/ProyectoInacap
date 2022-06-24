@@ -30,7 +30,7 @@ namespace ProyectoInacap
             {
                 using (var reader = comando.ExecuteReader())
                 {
-                    //DropDown de tabla categoria
+                    //DropDown de tabla constructora
                     DropDownConstructora.DataSource = reader;
                     DropDownConstructora.DataValueField = "id";
                     DropDownConstructora.DataTextField = "nombre";
@@ -42,7 +42,7 @@ namespace ProyectoInacap
             {
                 using (var reader = comando.ExecuteReader())
                 {
-                    //DropDown de tabla categoria
+                    //DropDown de tabla obra
                     DropDownObra.DataSource = reader;
                     DropDownObra.DataValueField = "id";
                     DropDownObra.DataTextField = "obra";
@@ -53,7 +53,7 @@ namespace ProyectoInacap
             {
                 using (var reader = comando.ExecuteReader())
                 {
-                    //DropDown de tabla categoria
+                    //DropDown de tabla contacto
                     DropDownContacto.DataSource = reader;
                     DropDownContacto.DataValueField = "id";
                     DropDownContacto.DataTextField = "nombre";
@@ -75,7 +75,7 @@ namespace ProyectoInacap
             {
                 using (var reader = comando.ExecuteReader())
                 {
-                    //DropDown de tabla categoria
+                    //DropDown de tabla herramienta
                     DropDownHerramienta.DataSource = reader;
                     DropDownHerramienta.DataValueField = "id";
                     DropDownHerramienta.DataTextField = "nombre";
